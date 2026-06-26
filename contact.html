@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Titan Fitness Gym - Get in touch for memberships, questions, or to schedule a visit." />
+  <title>Contact Us | Titan Fitness Gym</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-dumbbell"></i>
+        <span>Titan Fitness</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="weightlifting.html">Weightlifting</a>
+        <a href="cardio.html">Cardio</a>
+        <a href="yoga.html">Yoga</a>
+        <a href="zumba.html">Zumba</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Join Now</a>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay"></div>
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="weightlifting.html">Weightlifting</a>
+    <a href="cardio.html">Cardio</a>
+    <a href="yoga.html">Yoga</a>
+    <a href="zumba.html">Zumba</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Join Now</a>
+  </div>
+
+  <section class="page-hero">
+    <img src="https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Contact" class="hero-bg" />
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-subtitle">Get in Touch</p>
+        <h1>Contact Us</h1>
+        <p>Have questions? Ready to join? We are here to help you take the next step.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <h2 style="margin-bottom:24px;font-size:1.8rem;">Send Us a Message</h2>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <input type="text" id="name" placeholder="Your Name" required />
+              <input type="email" id="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-row">
+              <input type="tel" id="phone" placeholder="Phone Number" />
+              <select id="subject">
+                <option value="">Select Subject</option>
+                <option value="membership">Membership Inquiry</option>
+                <option value="training">Personal Training</option>
+                <option value="classes">Class Information</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info-card reveal">
+          <div class="contact-info-item">
+            <i class="fas fa-location-dot"></i>
+            <div>
+              <h4>Address</h4>
+              <p>123 Fitness Street, Downtown, NY 10001</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>info@titanfitness.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon - Fri: 5:00 AM - 11:00 PM</p>
+              <p>Sat - Sun: 6:00 AM - 10:00 PM</p>
+              <p>24/7 Access for Members</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-share-nodes"></i>
+            <div>
+              <h4>Social Media</h4>
+              <p style="display:flex;gap:12px;margin-top:8px;">
+                <a href="#" style="color:var(--accent);"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="color:var(--accent);"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color:var(--accent);"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color:var(--accent);"><i class="fab fa-youtube"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section alt">
+    <div class="container">
+      <div class="map-placeholder reveal">
+        <i class="fas fa-map-location-dot"></i>
+        <p>Google Map Placeholder</p>
+        <p style="font-size:0.85rem;">123 Fitness Street, Downtown, NY 10001</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="glass-card reveal">
+        <div class="faq-item">
+          <button class="faq-question">What are your membership prices?<i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><p>We offer Basic ($29/month), Premium ($59/month), and Elite ($99/month) plans. Each includes different levels of access, classes, and personal training.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Can I try before I join?<i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><p>Absolutely! We offer a free 3-day trial pass so you can experience our facilities and classes before committing.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is the gym open 24/7?<i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><p>Yes, our facility is open 24/7 for all members with secure keycard access. Staffed hours are 5 AM - 11 PM on weekdays.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Do you offer personal training?<i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><p>Yes, we have 25+ certified personal trainers available. Premium and Elite members receive complimentary sessions included in their plan.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What should I bring to the gym?<i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><p>Bring a water bottle, towel, and comfortable workout clothes. We provide lockers, showers, and towel service.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Can I freeze my membership?<i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><p>Yes, you can freeze your membership for up to 3 months per year. Just contact our front desk with at least 7 days notice.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="reveal">
+        <h2>Ready to Transform?</h2>
+        <p>Drop by for a tour or send us a message. We cannot wait to welcome you to the Titan Fitness family.</p>
+        <a href="index.html#plans" class="btn btn-primary btn-large">View Membership Plans</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><i class="fas fa-dumbbell"></i><span>Titan Fitness</span></div>
+          <p>Transform your body and mind at the premier fitness destination.</p>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="weightlifting.html">Weightlifting</a></li>
+            <li><a href="cardio.html">Cardio</a></li>
+            <li><a href="yoga.html">Yoga</a></li>
+            <li><a href="zumba.html">Zumba</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-location-dot"></i><span>123 Fitness Street, Downtown, NY 10001</span></li>
+            <li><i class="fas fa-phone"></i><span>+1 (555) 123-4567</span></li>
+            <li><i class="fas fa-envelope"></i><span>info@titanfitness.com</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 Titan Fitness Gym. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
