@@ -27,13 +27,24 @@ export default function Navbar() {
             <Link href="/contact" className="btn btn-primary">Join Now</Link>
           </div>
           <button className="mobile-menu-btn" aria-label="Open menu">
-            <i className="fas fa-bars"></i>
+            <span className="hamburger-bar"></span>
+            <span className="hamburger-bar"></span>
+            <span className="hamburger-bar"></span>
           </button>
         </div>
       </nav>
 
       <div className="mobile-overlay"></div>
       <div className="mobile-nav">
+        <div className="mobile-nav-header">
+          <Link href="/" className="logo" onClick={() => {}}>
+            <i className="fas fa-dumbbell logo-icon"></i>
+            <span>Titan Fitness</span>
+          </Link>
+          <button className="mobile-nav-close" aria-label="Close menu">
+            <i className="fas fa-times"></i>
+          </button>
+        </div>
         <Link href="/" className={isActive('/')}>Home</Link>
         <Link href="/about" className={isActive('/about')}>About Us</Link>
         <Link href="/weightlifting" className={isActive('/weightlifting')}>Weightlifting</Link>

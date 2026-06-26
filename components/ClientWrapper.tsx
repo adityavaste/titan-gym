@@ -23,15 +23,26 @@ export default function ClientWrapper() {
     function toggleMobileMenu() {
       mobileNav?.classList.toggle('active')
       mobileOverlay?.classList.toggle('active')
+      mobileMenuBtn?.classList.toggle('active')
       document.body.style.overflow = mobileNav?.classList.contains('active') ? 'hidden' : ''
     }
 
+    function closeMobileMenu() {
+      mobileNav?.classList.remove('active')
+      mobileOverlay?.classList.remove('active')
+      mobileMenuBtn?.classList.remove('active')
+      document.body.style.overflow = ''
+    }
+
     mobileMenuBtn?.addEventListener('click', toggleMobileMenu)
-    mobileOverlay?.addEventListener('click', toggleMobileMenu)
+    mobileOverlay?.addEventListener('click', closeMobileMenu)
+
+    const mobileNavClose = document.querySelector('.mobile-nav-close') as HTMLElement | null
+    mobileNavClose?.addEventListener('click', closeMobileMenu)
 
     mobileNav?.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
-        if (mobileNav?.classList.contains('active')) toggleMobileMenu()
+        if (mobileNav?.classList.contains('active')) closeMobileMenu()
       })
     })
 
