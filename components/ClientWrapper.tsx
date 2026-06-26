@@ -8,9 +8,9 @@ export default function ClientWrapper() {
     const navbar = document.querySelector('.navbar') as HTMLElement | null
     function handleScroll() {
       if (window.scrollY > 50) {
-        navbar?.classList.add('scrolled')
+        navbar?.classList.add('navbar-scrolled')
       } else {
-        navbar?.classList.remove('scrolled')
+        navbar?.classList.remove('navbar-scrolled')
       }
     }
     window.addEventListener('scroll', handleScroll)
